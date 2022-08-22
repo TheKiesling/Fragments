@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral10"
+    tools:context=".SearchFragment">
+
+    <TextView
+        android:id="@+id/text_SearchFragment_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distanceTwo"
+        android:layout_marginTop="@dimen/bigDistance"
+        android:text="@string/search"
+        android:textColor="@color/whiteSecond"
+        android:textSize="@dimen/textHeaderOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_SearchFragment_yourTopGenres"/>
+
+    <TextView
+        android:id="@+id/text_SearchFragment_yourTopGenres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textHeaderTwo"
+        android:textSize="@dimen/textHeaderThree"
+        android:text="@string/yourTopGenres"
+        android:textColor="@color/whiteSecond"
+        app:layout_constraintStart_toStartOf="@+id/text_SearchFragment_search"
+        app:layout_constraintTop_toBottomOf="@+id/text_SearchFragment_search" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/constraintLayout_SearchFragment_ViewOne"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/distanceGrid"
+        app:layout_constraintStart_toStartOf="@id/text_SearchFragment_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_SearchFragment_yourTopGenres"
+        android:layout_marginEnd="@dimen/distanceTwo"
+        android:layout_marginTop="@dimen/textHeaderThree"
+        app:constraint_referenced_ids="item_SearchFragment_Latina,item_SearchFragment_SpaceOne,item_SearchFragment_HipHop"
+        app:flow_wrapMode="chain"/>
+    <View
+        android:id="@+id/item_SearchFragment_Latina"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/zero"
+        android:background="@color/pink"
+        />
+
+    <TextView
+        android:id="@+id/text_SearchFragment_Latina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distanceThree"
+        android:layout_marginTop="@dimen/distanceThree"
+        android:text="@string/Latina"
+        android:textColor="@color/whiteSecond"
+        android:textSize="@dimen/textHeaderThree"
+        app:layout_constraintStart_toStartOf="@id/item_SearchFragment_Latina"
+        app:layout_constraintTop_toTopOf="@id/item_SearchFragment_Latina" />
+
+    <View
+        android:id="@+id/item_SearchFragment_SpaceOne"
+        android:layout_width="@dimen/distanceThree"
+        android:layout_height="@dimen/zero" />
+    <View
+        android:id="@+id/item_SearchFragment_HipHop"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/zero"
+        android:background="@color/orange"/>
+
+    <TextView
+        android:id="@+id/text_SearchFragment_HipHop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distanceThree"
+        android:layout_marginTop="@dimen/distanceThree"
+        android:text="@string/Hip_Hop"
+        android:textColor="@color/whiteSecond"
+        android:textSize="@dimen/textHeaderThree"
+        app:layout_constraintStart_toStartOf="@id/item_SearchFragment_HipHop"
+        app:layout_constraintTop_toTopOf="@id/item_SearchFragment_HipHop" />
+
+
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/constraintLayout_SearchFragment_ViewTwo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/distanceGrid"
+        app:layout_constraintStart_toStartOf="@id/text_SearchFragment_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_SearchFragment_ViewOne"
+        android:layout_marginEnd="@dimen/distanceTwo"
+        android:layout_marginTop="@dimen/distanceThree"
+        app:constraint_referenced_ids="item_SearchFragment_Pop,item_SearchFragment_SpaceTwo,item_SearchFragment_Rock"
+        app:flow_wrapMode="chain"/>
+
+    <View
+        android:id="@+id/item_SearchFragment_Pop"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/zero"
+        android:background="@color/purple_200"
+        />
+
+    <TextView
+        android:id="@+id/text_SearchFragment_Pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distanceThree"
+        android:layout_marginTop="@dimen/distanceThree"
+        android:text="@string/Pop"
+        android:textColor="@color/whiteSecond"
+        android:textSize="@dimen/textHeaderThree"
+        app:layout_constraintStart_toStartOf="@id/item_SearchFragment_Pop"
+        app:layout_constraintTop_toTopOf="@id/item_SearchFragment_Pop" />
+
+    <View
+        android:id="@+id/item_SearchFragment_SpaceTwo"
+        android:layout_width="@dimen/distanceThree"
+        android:layout_height="@dimen/zero" />
+    <View
+        android:id="@+id/item_SearchFragment_Rock"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/zero"
+        android:background="@color/red"/>
+
+    <TextView
+        android:id="@+id/text_SearchFragment_Rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distanceThree"
+        android:layout_marginTop="@dimen/distanceThree"
+        android:text="@string/Rock"
+        android:textColor="@color/whiteSecond"
+        android:textSize="@dimen/textHeaderThree"
+        app:layout_constraintStart_toStartOf="@id/item_SearchFragment_Rock"
+        app:layout_constraintTop_toTopOf="@id/item_SearchFragment_Rock" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

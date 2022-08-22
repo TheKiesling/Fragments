@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Fragments</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="yourLibrary">Your Library</string>
+    <string name="goodMorning">Good morning,</string>
+    <string name="name">José Pablo</string>
+    <string name="yourTopGenres">Your Top Genres</string>
+    <string name="Latina">Latina</string>
+    <string name="Hip_Hop">Hip Hop</string>
+    <string name="Pop">Pop</string>
+    <string name="Rock">Rock</string>
+    <string name="mostRecent">Most Recent</string>
+    <string name="likedSongs">Liked Songs</string>
+    <string name="songs">songs</string>
+    <string name="zero">0</string>
+</resources>

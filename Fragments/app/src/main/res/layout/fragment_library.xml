@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral10">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_LibraryFragment_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bigDistance"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_LibraryFragment_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_shadow_end_color"
+            android:layout_marginStart="@dimen/distanceThree"
+            android:minWidth="@dimen/zero"
+            android:paddingStart="@dimen/paddingIcons"
+            android:paddingEnd="@dimen/paddingIcons"
+            app:icon="@drawable/ic_profile"
+            app:iconGravity="textEnd"
+            app:iconPadding="@dimen/zero"
+            app:iconSize="@dimen/bigDistance"
+            app:iconTint="@color/whiteSecond"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_LibraryFragment_yourLibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yourLibrary"
+            android:textColor="@color/whiteSecond"
+            android:textSize="@dimen/textHeaderTwo"
+            android:padding="@dimen/distanceThree"
+            app:layout_constraintStart_toEndOf="@id/button_LibraryFragment_profile"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_mainActivity_directions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_shadow_end_color"
+            android:minWidth="@dimen/zero"
+            android:paddingStart="@dimen/paddingIcons"
+            android:paddingEnd="@dimen/paddingIcons"
+            app:icon="@drawable/ic_search"
+            app:iconGravity="textEnd"
+            app:iconPadding="@dimen/zero"
+            app:iconSize="@dimen/bigDistance"
+            app:iconTint="@color/whiteSecond"
+            app:layout_constraintEnd_toStartOf="@id/button_LibraryFragment_add"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_LibraryFragment_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/textHeaderThree"
+            android:background="@color/cardview_shadow_end_color"
+            android:minWidth="@dimen/zero"
+            android:paddingStart="@dimen/paddingIcons"
+            android:paddingEnd="@dimen/paddingIcons"
+            app:icon="@drawable/ic_add"
+            app:iconGravity="textEnd"
+            app:iconPadding="@dimen/zero"
+            app:iconSize="@dimen/bigDistance"
+            app:iconTint="@color/whiteSecond"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_LibraryFragment_Sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distanceThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_LibraryFragment_Header">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_LibraryFragment_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/textHeaderThree"
+            android:background="@color/cardview_shadow_end_color"
+            android:minWidth="@dimen/zero"
+            android:paddingStart="@dimen/paddingIcons"
+            android:paddingEnd="@dimen/paddingIcons"
+            android:rotation="90"
+            app:icon="@drawable/ic_arrows"
+            app:iconGravity="textEnd"
+            app:iconPadding="@dimen/zero"
+            app:iconSize="@dimen/distanceOne"
+            app:iconTint="@color/whiteSecond"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_LibraryFragment_mostRecent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/distanceThree"
+            android:text="@string/mostRecent"
+            android:textColor="@color/whiteSecond"
+            android:textSize="@dimen/textHeaderThree"
+            app:layout_constraintStart_toEndOf="@id/button_LibraryFragment_arrows"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_LibraryFragment_playlists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distanceThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_LibraryFragment_Sort">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_LibraryFragment_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/distanceThree"
+            android:background="@color/purple_500"
+            android:minWidth="@dimen/zero"
+            android:paddingStart="@dimen/distanceTwo"
+            android:paddingTop="@dimen/distanceThree"
+            android:paddingEnd="@dimen/distanceTwo"
+            android:paddingBottom="@dimen/distanceThree"
+            app:icon="@drawable/ic_favorite"
+            app:iconGravity="textEnd"
+            app:iconPadding="@dimen/zero"
+            app:iconSize="@dimen/distanceOne"
+            app:iconTint="@color/whiteSecond"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_LibraryFragment_likedSongsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/distanceThree"
+            android:layout_marginTop="@dimen/distanceThree"
+            android:text="@string/likedSongs"
+            android:textColor="@color/whiteSecond"
+            app:layout_constraintStart_toEndOf="@+id/button_LibraryFragment_favorite"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_LibraryFragment_likedSongs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grayLight"
+            android:text="@string/zero"
+            app:layout_constraintStart_toStartOf="@+id/text_LibraryFragment_likedSongsHeader"
+            app:layout_constraintTop_toBottomOf="@+id/text_LibraryFragment_likedSongsHeader" />
+
+        <TextView
+            android:id="@+id/text_LibraryFragment_songs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/littleDistance"
+            android:text="@string/songs"
+            android:textColor="@color/grayLight"
+            app:layout_constraintStart_toEndOf="@+id/text_LibraryFragment_likedSongs"
+            app:layout_constraintTop_toBottomOf="@+id/text_LibraryFragment_likedSongsHeader" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
